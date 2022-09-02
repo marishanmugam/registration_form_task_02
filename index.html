@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 | Mariappan G</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- font cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   
+    <div class="main">
+        <div class="container">
+            <h1>User Registration Form</h1>
+            <div class="data">
+                <form action="" id="form-data">
+                   <div class="data-container">
+                        <label for="">Name</label>
+                        <input type="text" name="" id="namebox" placeholder="Enter your Name here" required>
+
+                       
+                            <label for="">Email</label>
+                            <input type="text" name="" id="emailbox" placeholder="Enter your mail here" required>
+                            <label for="" id="error">Incorrect e-mail</label>
+                         
+
+                        <label for="" id="mobile">Mobile Number</label>
+                        <input type="text" name="" id="mobilebox" maxlength="10" placeholder="number and 10 digit only" onkeypress="return mobNumber(event)" required>
+                        
+                        <div>
+                            <label for="">Languages</label><br>
+                            <input type="checkbox" name="Languages" id="tamil" value="Tamil"><label for="tamil">Tamil</label>
+                            <input type="checkbox" name="Languages" id="english" value="English"><label for="english">English</label>
+                            <input type="checkbox" name="Languages" id="malayalam" value="Malayalam"><label for="malayalam">Malayalam</label>
+                        </div>
+                        <!-- <select name="" id="lang">
+                            <option value="Tamil">Tamil</option>
+                            <option value="English">English</option>
+                        </select> -->
+
+                        <div class="radio">
+                            <label for="">Gender</label>
+                            <input type="radio" name="gender" id="male" value="Male">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="female" value="Female">
+                            <label for="female">Female</label>
+                        </div>
+
+                        <label for="">Country</label>
+                        <select name="" id="country">
+                           
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="England">England</option>
+                        </select>
+
+                        <input type="submit" value="Submit" id="submitbtn" class="submitbtn">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="table-datas">
+            <div class="table-container">
+                <h1>Table Data</h1>
+                <table style="width:100%;">
+                    <tr>
+                        <th>Sl.no</th>
+                        <th>Name</th>
+                        <th>E-mail</th>
+                        <th>Mobile</th>
+                        <th>Language</th>
+                        <th>Gender</th>
+                        <th>Country</th>
+                        
+                    </tr>
+                    <tbody id="table-list">
+                        <th>-</th>
+                        <th>-</th>
+                        <th>-</th>
+                        <th>-</th>
+                        <th>-</th>
+                        <th>-</th>
+                        <th>-</th>
+                        
+                    </tbody>
+                </table>
+            </div>
+          
+        </div>
+        <a href=""></a>
+    </div>
+  
+
+    <script src="./app.js"></script>
+</body>
+</html>

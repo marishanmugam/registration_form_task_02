@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #0F3460;
+    font-family: Poppins;
+}
+.main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+}
+.container{
+    width:50%;
+    position: relative;
+    height: 700px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,10%);
+    text-align: center;
+    background-color: #3AB4F2;
+    border-radius:10px;
+    padding: 20px;
+}
+
+.container .data-container {
+   display: grid;
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    grid-row-gap: 10px;
+}
+form {
+    padding: 10PX 0;
+}
+input[type='text']
+{
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+    
+}
+
+select ,.radio
+{
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.container .data-container .email {
+    position: relative;
+}
+.container .data-container #error {
+    text-align: center;
+    color: #D61C4E;
+    display: none;
+    position:absolute;
+    top: 38%;
+    left: 25%;
+    transform: translate(50%,-50%);
+}
+.mobile {
+    margin-top: 10PX;
+}
+.container .data-container .submitbtn {
+    margin: 20px 0;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    background: #1A4D2E;
+    color: azure;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.table-datas .table-container {
+    width:100%;
+    position: relative;
+    height: auto;
+    top: 10%;
+    left: 45%;
+    transform: translate(-50%,10%);
+    text-align: center;
+    background-color: #3AB4F2;
+    border-radius:10px;
+    padding: 30px;
+}
+
+table, tr ,td,th {
+    border:  1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+}
